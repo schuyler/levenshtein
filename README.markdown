@@ -5,6 +5,11 @@ Converted to FFI by David Balatero for Ruby portability.
 
 This gem originally based on levenshtein.
 
+Including in Gemfile
+====================
+
+    gem 'levenshtein-ffi', :require => 'levenshtein'
+
 Original README
 ===============
 
@@ -12,8 +17,8 @@ The levenshtein module implements fast Damerau-Levenshtein edit distance
 computation in O(n) memory and O(n^2) time, using a C wrapper. The module has a
 single function:
 
-  require 'levenshtein'
-  Levenshtein.distance("string1", "string2") == 1 # returns true
+    require 'levenshtein'
+    Levenshtein.distance("string1", "string2") == 1 # returns true
 
 This function can be used as a drop-in replacement for
 Text::Levenshtein.levenshtein, which is pure Ruby and rather slow. That's it!
