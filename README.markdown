@@ -5,6 +5,14 @@ Converted to FFI by David Balatero for Ruby portability.
 
 This gem originally based on levenshtein.
 
+Tested on:
+
+* MRI 1.8.6
+* MRI 1.8.7
+* MRI 1.9.1
+* MRI 1.9.2
+* Rubinius 1.1.0
+
 Including in Gemfile
 ====================
 
