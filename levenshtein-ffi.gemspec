@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{levenshtein-ffi}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Balatero"]
-  s.date = %q{2010-11-03}
+  s.date = %q{2010-11-04}
   s.description = %q{Provides a fast, cross-Ruby implementation of the levenshtein distance algorithm.}
   s.email = %q{dbalatero@gmail.com}
   s.extensions = ["ext/levenshtein/extconf.rb"]
