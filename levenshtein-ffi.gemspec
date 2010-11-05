@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".gitignore",
+     "CHANGELOG.markdown",
      "Gemfile",
      "README.markdown",
      "Rakefile",

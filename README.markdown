@@ -13,6 +13,10 @@ Tested on:
 * MRI 1.9.2
 * Rubinius 1.1.0
 
+Known Issues
+============
+* The C extension uses `char*` strings, and so Unicode strings will give incorrect distances.
+
 Including in Gemfile
 ====================
 
