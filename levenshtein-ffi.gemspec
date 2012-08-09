@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{levenshtein-ffi}
-  s.version = "1.0.2"
+  s.name = "levenshtein-ffi"
+  s.version = "1.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Balatero"]
-  s.date = %q{2011-09-05}
-  s.description = %q{Provides a fast, cross-Ruby implementation of the levenshtein distance algorithm.}
-  s.email = %q{dbalatero@gmail.com}
+  s.date = "2012-08-09"
+  s.description = "Provides a fast, cross-Ruby implementation of the levenshtein distance algorithm."
+  s.email = "dbalatero@gmail.com"
   s.extensions = ["ext/levenshtein/extconf.rb"]
   s.extra_rdoc_files = [
     "README.markdown",
@@ -34,27 +34,27 @@ Gem::Specification.new do |s|
     "spec/levenshtein_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/dbalatero/levenshtein-ffi}
+  s.homepage = "http://github.com/dbalatero/levenshtein-ffi"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{An FFI version of the levenshtein gem.}
+  s.rubygems_version = "1.8.17"
+  s.summary = "An FFI version of the levenshtein gem."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<ffi>, [">= 0"])
+      s.add_runtime_dependency(%q<ffi>, ["~> 1.1.5"])
       s.add_runtime_dependency(%q<ffi>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
-      s.add_dependency(%q<ffi>, [">= 0"])
+      s.add_dependency(%q<ffi>, ["~> 1.1.5"])
       s.add_dependency(%q<ffi>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
     end
   else
-    s.add_dependency(%q<ffi>, [">= 0"])
+    s.add_dependency(%q<ffi>, ["~> 1.1.5"])
     s.add_dependency(%q<ffi>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
