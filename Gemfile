@@ -1,8 +1,8 @@
 source :rubygems
 
-gem 'ffi'
+gem 'ffi', '~> 1.1.5'
 
 group :test do
-  gem 'rspec', '1.3.1'
+  gem 'rspec', '2.7.0'
   gem 'jeweler'
 end
