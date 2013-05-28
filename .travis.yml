@@ -8,3 +8,5 @@ rvm:
   - rbx-19mode
 before_script:
   - cd ext/levenshtein/ && ruby extconf.rb && make && cd ../..
+script:
+  - bundle exec rspec
