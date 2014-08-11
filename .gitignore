@@ -2,3 +2,5 @@ README.markdown.html
 *.rbc
 pkg
 .*.sw?
+Gemfile.lock
+*.gem
