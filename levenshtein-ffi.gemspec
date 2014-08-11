@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/dbalatero/levenshtein-ffi"
+  s.license = "BSD 2-Clause"
   s.rubygems_version = "2.2.2"
   s.summary = "An FFI version of the levenshtein gem."
 
