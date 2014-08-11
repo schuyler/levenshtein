@@ -7,9 +7,9 @@ begin
     gemspec.email = "dbalatero@gmail.com"
     gemspec.homepage = "http://github.com/dbalatero/levenshtein-ffi"
     gemspec.authors = ["David Balatero"]
-    gemspec.add_dependency "ffi", '>= 1.8'
-    gemspec.add_development_dependency "rspec", '~> 2.99.0'
-    gemspec.add_development_dependency "jeweler", '~> 2.0.1'
+    gemspec.add_dependency "ffi", '~> 1.9'
+    gemspec.add_development_dependency "rspec", '~> 2.99'
+    gemspec.add_development_dependency "jeweler", '~> 2.0'
   end
 
   Jeweler::GemcutterTasks.new
