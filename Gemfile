@@ -1,8 +1,3 @@
-source :rubygems
+source "https://rubygems.org" 
 
 gemspec
-
-group :test do
-  gem 'rspec', '2.7.0'
-  gem 'jeweler'
-end
