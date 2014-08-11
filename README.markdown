@@ -9,13 +9,10 @@ This gem originally based on levenshtein.
 
 Tested on:
 
-* MRI 1.8.6
-* MRI 1.8.7
-* MRI 1.9.1
 * MRI 1.9.2
 * MRI 1.9.3
 * MRI 2.0.0
-* Rubinius 1.1.0 (1.8 and 1.9 mode)
+* Rubinius (1.9 mode)
 
 Known Issues
 ============
