@@ -1,6 +1,8 @@
 levenshtein-ffi
 ===============
 
+[![Build Status](https://travis-ci.org/dbalatero/levenshtein-ffi.svg?branch=master)](https://travis-ci.org/dbalatero/levenshtein-ffi)
+
 Converted to FFI by David Balatero for Ruby portability.
 
 This gem originally based on levenshtein.
