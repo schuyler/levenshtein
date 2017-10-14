@@ -11,8 +11,8 @@
 # define min(x, y) ((x) < (y) ? (x) : (y))
 
 unsigned int levenshtein (const char *word1, const char *word2) {
-    unsigned int len1 = strlen(word1),
-                 len2 = strlen(word2);
+    size_t len1 = strlen(word1),
+           len2 = strlen(word2);
     unsigned int *v = calloc(len2 + 1, sizeof(unsigned int));
     unsigned int i, j, current, next, cost;
 
