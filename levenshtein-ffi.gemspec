@@ -6,17 +6,18 @@
 # stub: ext/levenshtein/extconf.rb
 
 Gem::Specification.new do |s|
-  s.name = "levenshtein-ffi"
+  s.name = "levenshtein-ffi".freeze
   s.version = "1.1.0"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib"]
-  s.authors = ["David Balatero"]
-  s.date = "2014-08-11"
-  s.description = "Provides a fast, cross-Ruby implementation of the levenshtein distance algorithm."
-  s.email = "dbalatero@gmail.com"
-  s.extensions = ["ext/levenshtein/extconf.rb"]
+  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib".freeze]
+  s.authors = ["David Balatero".freeze]
+  s.date = "2017-10-14"
+  s.description = "Provides a fast, cross-Ruby implementation of the levenshtein distance algorithm.".freeze
+  s.email = "dbalatero@gmail.com".freeze
+  s.extensions = ["ext/levenshtein/extconf.rb".freeze]
   s.extra_rdoc_files = [
+    "LICENSE",
     "README.markdown"
   ]
   s.files = [
@@ -24,6 +25,7 @@ Gem::Specification.new do |s|
     ".travis.yml",
     "CHANGELOG.markdown",
     "Gemfile",
+    "LICENSE",
     "README.markdown",
     "Rakefile",
     "VERSION",
@@ -37,27 +39,28 @@ Gem::Specification.new do |s|
     "spec/levenshtein_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = "http://github.com/dbalatero/levenshtein-ffi"
-  s.license = "BSD 2-Clause"
-  s.rubygems_version = "2.2.2"
-  s.summary = "An FFI version of the levenshtein gem."
+  s.homepage = "http://github.com/dbalatero/levenshtein-ffi".freeze
+  s.rubygems_version = "2.6.11".freeze
+  s.summary = "An FFI version of the levenshtein gem.".freeze
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<ffi>, ["~> 1.9"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.99"])
-      s.add_development_dependency(%q<jeweler>, ["~> 2.0"])
+      s.add_development_dependency(%q<rspec>.freeze, ["~> 2.99"])
+      s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.0"])
+      s.add_runtime_dependency(%q<ffi>.freeze, ["~> 1.9"])
+      s.add_development_dependency(%q<simplecov>.freeze, ["~> 0.15"])
     else
-      s.add_dependency(%q<ffi>, ["~> 1.9"])
-      s.add_dependency(%q<rspec>, ["~> 2.99"])
-      s.add_dependency(%q<jeweler>, ["~> 2.0"])
+      s.add_dependency(%q<rspec>.freeze, ["~> 2.99"])
+      s.add_dependency(%q<jeweler>.freeze, ["~> 2.0"])
+      s.add_dependency(%q<ffi>.freeze, ["~> 1.9"])
+      s.add_dependency(%q<simplecov>.freeze, ["~> 0.15"])
     end
   else
-    s.add_dependency(%q<ffi>, ["~> 1.9"])
-    s.add_dependency(%q<rspec>, ["~> 2.99"])
-    s.add_dependency(%q<jeweler>, ["~> 2.0"])
+    s.add_dependency(%q<rspec>.freeze, ["~> 2.99"])
+    s.add_dependency(%q<jeweler>.freeze, ["~> 2.0"])
+    s.add_dependency(%q<ffi>.freeze, ["~> 1.9"])
+    s.add_dependency(%q<simplecov>.freeze, ["~> 0.15"])
   end
 end
-

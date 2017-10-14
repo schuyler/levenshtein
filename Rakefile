@@ -11,6 +11,7 @@ begin
     gemspec.add_dependency              'ffi',       '~> 1.9'
     gemspec.add_development_dependency  'rspec',     '~> 2.99'
     gemspec.add_development_dependency  'jeweler',   '~> 2.0'
+    gemspec.add_development_dependency  'simplecov', '~> 0.15'
   end
 
   Jeweler::GemcutterTasks.new
