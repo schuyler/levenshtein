@@ -1,1 +1,1 @@
-require File.dirname(__FILE__) + "/../lib/levenshtein"
+require File.dirname(__FILE__) + '/../lib/levenshtein'

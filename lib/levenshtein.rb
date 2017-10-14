@@ -5,7 +5,7 @@ module Levenshtein
     extend FFI::Library
 
     # Try loading in order.
-    library = File.dirname(__FILE__) + "/../ext/levenshtein/levenshtein"
+    library = File.dirname(__FILE__) + '/../ext/levenshtein/levenshtein'
     candidates = ['.bundle', '.so', '.dylib', ''].map { |ext| library + ext }
     ffi_lib(candidates)
 
@@ -17,13 +17,13 @@ module Levenshtein
     end
 
     # Unsafe version. Results in a segmentation fault if passed nils!
-    attach_function :ffi_distance, :levenshtein, [:string, :string], :int
+    attach_function :ffi_distance, :levenshtein, %i[string string], :int
 
     private
+
     def validate(arg)
-      unless arg.kind_of?(String)
-        raise TypeError, "wrong argument type #{arg.class} (expected String)"
-      end
+      message = "wrong argument type #{arg.class} (expected String)"
+      raise TypeError, message unless arg.is_a?(String)
     end
   end
 end
