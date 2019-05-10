@@ -1,9 +1,37 @@
+levenshtein-ffi
+===============
+
+[![Build Status](https://travis-ci.org/dbalatero/levenshtein-ffi.svg?branch=master)](https://travis-ci.org/dbalatero/levenshtein-ffi)
+
+Converted to FFI by David Balatero for Ruby portability.
+
+This gem originally based on levenshtein.
+
+Tested on:
+
+* MRI 1.9.2
+* MRI 1.9.3
+* MRI 2.0.0
+* Rubinius (1.9 mode)
+
+Known Issues
+============
+* The C extension uses `char*` strings, and so Unicode strings will give incorrect distances.
+
+Including in Gemfile
+====================
+
+    gem 'levenshtein-ffi', :require => 'levenshtein'
+
+Original README
+===============
+
 The levenshtein module implements fast Damerau-Levenshtein edit distance
 computation in O(n) memory and O(n^2) time, using a C wrapper. The module has a
 single function:
 
-  require 'levenshtein'
-  Levenshtein.distance("string1", "string2") == 1 # returns true
+    require 'levenshtein'
+    Levenshtein.distance("string1", "string2") == 1 # returns true
 
 This function can be used as a drop-in replacement for
 Text::Levenshtein.levenshtein, which is pure Ruby and rather slow. That's it!
@@ -34,4 +62,4 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-- end -
+\- end -
