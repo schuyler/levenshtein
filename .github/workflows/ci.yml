@@ -1,0 +1,33 @@
+name: Run tests
+on:
+  pull_request:
+    types: [
+        # Default pull_request trigger types.
+        opened,
+        synchronize,
+        reopened,
+      ]
+  push:
+    branches: [main]
+
+jobs:
+  ruby_tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version:
+          - 2.7
+          - 3.0
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby ${{ matrix.ruby-version }}
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+
+      - name: Install Dependencies
+        run: bundle install
+
+      - name: Run Tests
+        run: rspec spec
