@@ -1,4 +1,8 @@
 require 'simplecov'
 SimpleCov.start { add_filter('/spec') }
 
-require File.dirname(__FILE__) + '/../lib/levenshtein'
+require 'rake'
+Rake::DefaultLoader.new.load 'Rakefile'
+Rake::Task['compile:levenshtein'].invoke
+
+require 'levenshtein'
