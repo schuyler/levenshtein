@@ -1,3 +1,6 @@
+1.2.0
+* Support ruby >= 3.2
+
 1.0.3
 -----
 * Added nil type validation to levenshtein [https://github.com/dbalatero/levenshtein-ffi/pull/3]
