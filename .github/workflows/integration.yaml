@@ -29,7 +29,8 @@ jobs:
         mkdir -p integration
         cd integration
         ruby -v
-        printf "source 'https://rubygems.org'\ngem 'levenshtein-ffi', require: 'levenshtein', github: 'minhhien1996/levenshtein'" > Gemfile
+        printf "source 'https://rubygems.org'\ngem 'levenshtein-ffi', require: 'levenshtein', github: '${{ github.repository }}'" > Gemfile
+        cat Gemfile
         bundle install
         bundle exec ruby -e "require 'levenshtein'; puts Levenshtein.distance('hello', 'hello')"
 
