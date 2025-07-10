@@ -47,18 +47,18 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>.freeze, ["~> 2.99"])
+      s.add_development_dependency(%q<rspec>.freeze, ["~> 3.0"])
       s.add_development_dependency(%q<jeweler>.freeze, ["~> 2.0"])
       s.add_runtime_dependency(%q<ffi>.freeze, ["~> 1.9"])
       s.add_development_dependency(%q<simplecov>.freeze, ["~> 0.15"])
     else
-      s.add_dependency(%q<rspec>.freeze, ["~> 2.99"])
+      s.add_dependency(%q<rspec>.freeze, ["~> 3.0"])
       s.add_dependency(%q<jeweler>.freeze, ["~> 2.0"])
       s.add_dependency(%q<ffi>.freeze, ["~> 1.9"])
       s.add_dependency(%q<simplecov>.freeze, ["~> 0.15"])
     end
   else
-    s.add_dependency(%q<rspec>.freeze, ["~> 2.99"])
+    s.add_dependency(%q<rspec>.freeze, ["~> 3.0"])
     s.add_dependency(%q<jeweler>.freeze, ["~> 2.0"])
     s.add_dependency(%q<ffi>.freeze, ["~> 1.9"])
     s.add_dependency(%q<simplecov>.freeze, ["~> 0.15"])
