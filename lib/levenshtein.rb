@@ -7,7 +7,6 @@ module Levenshtein
     # Try loading in order.
     library = File.dirname(__FILE__) + '/levenshtein'
     candidates = ['.bundle', '.so', '.dylib', ''].map { |ext| library + ext }
-    # candidates = ['.bundle', '.so', '.dylib', ''].map { |ext| File.join(RbConfig::CONFIG['sitearchdir'], "levenshtein#{ext}") }
     ffi_lib(candidates)
 
     # Safe version of distance, checks that arguments are really strings.
