@@ -5,7 +5,9 @@ module Levenshtein
     extend FFI::Library
 
     # Try loading in order.
-    candidates = ['.bundle', '.so', '.dylib', ''].map { |ext| File.join(RbConfig::CONFIG['sitearchdir'], "levenshtein#{ext}") }
+    library = File.dirname(__FILE__) + '/../ext/levenshtein/levenshtein'
+    candidates = ['.bundle', '.so', '.dylib', ''].map { |ext| library + ext }
+    # candidates = ['.bundle', '.so', '.dylib', ''].map { |ext| File.join(RbConfig::CONFIG['sitearchdir'], "levenshtein#{ext}") }
     ffi_lib(candidates)
 
     # Safe version of distance, checks that arguments are really strings.
