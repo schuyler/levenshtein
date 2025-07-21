@@ -9,7 +9,7 @@ begin
     gemspec.homepage    = 'http://github.com/dbalatero/levenshtein-ffi'
     gemspec.authors     = ['David Balatero']
     gemspec.add_dependency              'ffi',       '~> 1.9'
-    gemspec.add_development_dependency  'rspec',     '~> 2.99'
+    gemspec.add_development_dependency  'rspec',     '~> 3.0'
     gemspec.add_development_dependency  'jeweler',   '~> 2.0'
     gemspec.add_development_dependency  'simplecov', '~> 0.15'
   end
@@ -18,3 +18,7 @@ begin
 rescue LoadError
   puts 'Jeweler not available. Install it with: gem install jeweler'
 end
+
+require 'rake/extensiontask'
+
+Rake::ExtensionTask.new('levenshtein')
